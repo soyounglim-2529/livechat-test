@@ -1,80 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3CX Live Chat Test</title>
-
-  <!-- (Optional) CSP for quick test.
-       NOTE: If your server already sets CSP via HTTP headers, this meta may NOT override it. -->
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self' https: data:;
-    script-src 'self' https://downloads-global.3cx.com 'unsafe-inline';
-    connect-src 'self' https://viatex.3cx.com.au https://downloads-global.3cx.com https:;
-    img-src 'self' https: data:;
-    style-src 'self' 'unsafe-inline' https:;
-    frame-src 'self' https:;
-  ">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>3CX Live Chat</title>
 </head>
-
 <body>
-  <h1>3CX Live Chat Test Page</h1>
-  <p>If you can see the chat window (not just a bubble), the widget is working.</p>
+  <h1>3CX Live Chat Test</h1>
 
-  <!-- 3CX Live Chat Widget (fixed snippet - recommended for debugging) -->
   <call-us
     phonesystem-url="https://viatex.3cx.com.au"
     party="LiveChat969816"
-    id="wp-live-chat-by-3CX"
-
     minimized="false"
-    minimized-style="bubbleright"
-    animation-style="noanimation"
-
-    allow-call="false"
-    allow-video="false"
-    allow-soundnotifications="true"
-    enable-mute="true"
-    enable-onmobile="true"
-    offline-enabled="true"
-    enable="true"
-
-    authentication="both"
-    show-operator-actual-name="true"
-    message-userinfo-format="name"
-    message-dateformat="both"
-    lang="en"
-    button-icon-type="bubble"
-
-    invite-message="Hello! :)"
-    first-response-message="How can we help you?"
-    ending-message="Your session is over.."
-    unavailable-message="We are away.."
-
-    style="
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      z-index: 99999;
-      font-size: 16px;
-      line-height: 17px;
-
-      --call-us-main-accent-color: #0B5FFF;
-      --call-us-main-background-color: #0B5FFF;
-      --call-us-plate-background-color: #0B5FFF;
-      --call-us-plate-font-color: #FFFFFF;
-
-      --call-us-main-font-color: #FFFFFF;
-      --call-us-agent-bubble-color: #00000010;
-    "
+    style="position:fixed;right:20px;bottom:20px;z-index:99999;"
   ></call-us>
 
-  <!-- 3CX Script (required) -->
-  <!-- Use NON-defer for debugging so it loads immediately -->
-  <script
-    src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js"
-    id="tcx-callus-js"
-    charset="utf-8"
-  ></script>
+  <script src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" charset="utf-8"></script>
 </body>
 </html>
