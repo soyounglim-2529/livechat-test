@@ -8,12 +8,18 @@
 <body>
   <h1>3CX Live Chat Test</h1>
 
-  <call-us
-    phonesystem-url="https://viatex.3cx.com.au"
-    party="LiveChat969816"
-    minimized="false"
-    style="position:fixed;right:20px;bottom:20px;z-index:99999;"
-  ></call-us>
+<call-us
+  phonesystem-url="https://viatex.3cx.com.au"
+  party="LiveChat969816"
+  minimized="true"
+  style="
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2147483647;
+    pointer-events: auto;
+  "
+></call-us>
 
   <script src="https://downloads-global.3cx.com/downloads/livechatandtalk/v1/callus.js" charset="utf-8"></script>
 </body>
